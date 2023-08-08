@@ -2,7 +2,7 @@
 authors = ["Moritz Moeller <virtualritz@protonmail.com>"]
 description = "Peripheral access API for MSP430F249 microcontroller"
 keywords = ["no-std", "msp430", "ti", "launchpad"]
-license = "MIT OR Apache-2.0"
+license = "Apache-2.0 OR MIT OR Zlib"
 name = "msp430f249"
 version = "0.1.1"
 edition = "2021"
