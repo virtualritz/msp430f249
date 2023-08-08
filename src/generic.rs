@@ -312,7 +312,7 @@ impl<REG: RegisterSpec> W<REG> {
 #[doc(hidden)]
 pub struct FieldReaderRaw<FI = u8>
 where
-    FI: FieldSpec
+    FI: FieldSpec,
 {
     pub(crate) bits: FI::Ux,
     _reg: marker::PhantomData<FI>,
@@ -418,8 +418,7 @@ where
     _field: marker::PhantomData<(FI, Safety)>,
 }
 
-impl<'a, REG, const WI: u8, const O: u8, FI, Safety>
-    FieldWriterRaw<'a, REG, WI, O, FI, Safety>
+impl<'a, REG, const WI: u8, const O: u8, FI, Safety> FieldWriterRaw<'a, REG, WI, O, FI, Safety>
 where
     REG: Writable + RegisterSpec,
     FI: FieldSpec,
@@ -683,4 +682,3 @@ where
         self.w
     }
 }
-

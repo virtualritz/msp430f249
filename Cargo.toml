@@ -1,12 +1,13 @@
 [package]
 authors = ["Moritz Moeller <virtualritz@protonmail.com>"]
-description = "Peripheral access API for MSP430f249 microcontroller"
+description = "Peripheral access API for MSP430F249 microcontroller"
 keywords = ["no-std", "msp430", "ti", "launchpad"]
 license = "MIT OR Apache-2.0"
 name = "msp430f249"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-repository = "https://github.com/ryandedesignworks/msp430f6736"
+repository = "https://github.com/virtualritz/msp430f249"
+documentation = "https://docs.rs/msp430f249"
 
 [dependencies]
 bare-metal = "1.0.0"
